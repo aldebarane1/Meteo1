@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/text_view_item_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paris"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <TextView
+        android:id="@+id/text_view_item_city_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_item_city_name"
+        android:text="Beau temps"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <TextView
+        android:id="@+id/text_view_item_city_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:text="12°C"
+        android:textSize="@dimen/text_size_large"/>
+
+    <ImageView
+        android:id="@+id/image_view_item_weather_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@id/text_view_item_city_temp"
+        android:src="@drawable/weather_rainy_grey"/>
+
+</RelativeLayout>
